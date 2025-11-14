@@ -1,33 +1,77 @@
-# DLL Injector
+# pydllinjector
 
-A simple Python DLL Injector that utilizes `ctypes` and the WIN32 API.
+A lightweight Windows DLL injector written in Python using the Win32 API (`ctypes`).  
+Includes a minimal GUI to select running processes, load a DLL, and inject it.
+# Features
 
-Currently only supports the most basic style of DLL injection, using `LoadLibraryA` and `CreateRemoteThread`.
+- Process list with PID and name  
+- DLL selection via file browser  
+- One-click injection  
+- Minimal, clean graphical interface  
+- Python package with command-line entry point  
+- Works on Windows 10 and Windows 11
+# Requirements
 
-Depending on whether you run this with 64bit or 32bit Python will change which processes you may inject into.
-
-![Python DLL Injector](https://i.imgur.com/w2AZbll.png)
+- Windows 10 or 11  
+- Python 3.8+  
+- Dependencies:  
+  - pywin32  
+  - psutil  
 # Installation
-You can install directly from GitHub using the command below,
-```sh
-pip install git+https://github.com/Indifferenzah/pydllinjector.git
-```
-Or you can clone the repo and install from the repository itself.
+Clone the repository:
 ```sh
 git clone https://github.com/Indifferenzah/pydllinjector.git
 cd pydllinjector
+```
+
+Install locally:
+```sh
 pip install .
 ```
-### Before you run the program, you must do
-```sh
-cd pydllinjector
-setx PATH "%PATH%;C:\Users\massi\AppData\Roaming\Python\Python313\Scripts"
-```
-To run the program,
+
+Launch the program:
 ```sh
 pydllinjector
 ```
-# Contacts
-**`Portfolio:`** https://indifferenzah.com/
 
-**`Email:`** indifferenzah@pm.me
+Or:
+```sh
+python -m pydllinjector
+```
+# Usage
+
+1. Select a process from the list.
+2. Click **Browse DLL…** and choose the DLL you want to inject.
+3. Click **Inject** to perform the injection.
+# Notes
+
+* The DLL architecture must match the target process:
+
+  * 64-bit process → 64-bit DLL
+  * 32-bit process → 32-bit DLL
+* Running the program as **Administrator** is recommended.
+* System-protected or antivirus-related processes typically cannot be injected.
+# Troubleshooting
+
+## Command `pydllinjector` not found
+
+Add Python’s Scripts directory to PATH, for example:
+```sh
+setx PATH "%PATH%;%APPDATA%\Python\Python313\Scripts"
+```
+# License
+
+```
+Copyright (c) 2025 Indifferenza.
+All rights reserved.
+
+Unauthorized copying, distribution, modification, or use of this
+software or its source code is strictly prohibited without prior
+written permission from the author.
+```
+# Disclaimer
+
+This software is for educational and research purposes only.
+Do not inject DLLs into processes you do not own or control.
+I do not assume any responsibility for damage or misuse.
+```
