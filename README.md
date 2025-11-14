@@ -17,6 +17,10 @@ Or you can clone the repo and install from the repository itself.
 git clone https://github.com/Indifferenzah/pydllinjector.git
 cd pydllinjector
 pip install .
+```
+### Before you run the program, you must do
+```sh
+cd pydllinjector
 setx PATH "%PATH%;C:\Users\massi\AppData\Roaming\Python\Python313\Scripts"
 ```
 To run the program,
