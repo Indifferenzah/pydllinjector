@@ -55,7 +55,7 @@ python -m pydllinjector
 
 ## Command `pydllinjector` not found
 
-Add Python’s Scripts directory to PATH, for example:
+Add Python’s Scripts directory to PATH:
 ```sh
 setx PATH "%PATH%;%APPDATA%\Python\Python313\Scripts"
 ```
