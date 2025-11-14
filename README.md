@@ -10,15 +10,18 @@ Depending on whether you run this with 64bit or 32bit Python will change which p
 # Installation
 You can install directly from GitHub using the command below,
 ```sh
-pip install git+https://github.com/jacoblusk/python-dll-injector.git
+pip install git+https://github.com/Indifferenzah/pydllinjector.git
 ```
 Or you can clone the repo and install from the repository itself.
 ```sh
-git clone https://github.com/jacoblusk/python-dll-injector.git
-cd python-dll-injector
+git clone https://github.com/Indifferenzah/pydllinjector.git
+cd pydllinjector
 pip install .
 ```
 To run the program,
 ```sh
 pydllinjector
 ```
+# Contacts
+**`Portfolio:`** https://indifferenzah.com/
+**`Email:`** indifferenzah@pm.me
