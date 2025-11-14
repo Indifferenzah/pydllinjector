@@ -52,9 +52,7 @@ python -m pydllinjector
 * Running the program as **Administrator** is recommended.
 * System-protected or antivirus-related processes typically cannot be injected.
 # Troubleshooting
-
-## Command `pydllinjector` not found
-
+### Command `pydllinjector` not found
 Add Python’s Scripts directory to PATH:
 ```sh
 setx PATH "%PATH%;%APPDATA%\Python\Python313\Scripts"
