@@ -23,5 +23,6 @@ To run the program,
 pydllinjector
 ```
 # Contacts
-**`Portfolio:`** https://indifferenzah.com/\n
+**`Portfolio:`** https://indifferenzah.com/
+
 **`Email:`** indifferenzah@pm.me
